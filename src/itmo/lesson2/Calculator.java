@@ -51,8 +51,8 @@ public class Calculator {
     }
     /**Overload division method**/
     void division(int firstNUM, int secondNUM) {
-        int result;
-        result = firstNUM / secondNUM;
+        double result;
+        result =(double) firstNUM / secondNUM;
         System.out.println("Int result:"+result);
     }
     void division(double firstNUM, double secondNUM) {
@@ -61,8 +61,8 @@ public class Calculator {
         System.out.println("Double result:"+result);
     }
     void division(long firstNUM, long secondNUM) {
-        long result;
-        result = firstNUM / secondNUM;
+        double result;
+        result = (double)  firstNUM / secondNUM;
         System.out.println("Long result:"+result);
     }
 }
