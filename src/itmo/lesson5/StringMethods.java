@@ -33,9 +33,16 @@ public class StringMethods {
             System.out.println(word+" is not palindrome");
         }
     }
-    public static String censorText(String text){
-        String censoredText = text.replace("бяка","[вырезано цензурой]");
-        return censoredText;
+    public static void censorText(String str, String word)
+    {
+        String arr[] = str.split(" ");
+        StringBuilder new_str = new StringBuilder();
+        for (String words : arr) {
+            if (!words.equals(word)) {
+                new_str.append(words).append(" [вырезано цензурой] ");
+            }
+        }
+        System.out.println(new_str);
     }
     public static int countIn(String str1,String str2){
         int count = str1.split(str2,-1).length-1;

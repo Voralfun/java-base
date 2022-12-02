@@ -11,12 +11,13 @@ public class Main {
         StringMethods.findMax(someText);
 
         //Task 2
-        String someWord = "rotor";
+        String someWord = "Топоп";
         StringMethods.ifPalindrome(someWord);
 
         //Task 3
         String justText = "Ты бяка";
-        System.out.println(StringMethods.censorText(justText));
+        String needChange ="бяка";
+        StringMethods.censorText(justText,needChange);
         //Task 4
         String str1 = "KKKADSJLAKSJDLL";
         String str2 = "KK";
